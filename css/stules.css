@@ -49,10 +49,60 @@ a {
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* montserrat-700 - cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts/montserrat-v14-cyrillic-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-cyrillic-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* noto-serif-regular - cyrillic */
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Serif'), local('NotoSerif'),
+        url('../fonts/noto-serif-v8-cyrillic-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/noto-serif-v8-cyrillic-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* noto-serif-italic - cyrillic */
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Noto Serif Italic'), local('NotoSerif-Italic'),
+        url('../fonts/noto-serif-v8-cyrillic-italic.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/noto-serif-v8-cyrillic-italic.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - cyrillic */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/roboto-slab-v11-cyrillic-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-slab-v11-cyrillic-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 .container {
     width: 58.75rem;
     margin: 0 auto;
 }
+
+/* header */
 
 .navigation {
     display: flex;
@@ -94,3 +144,71 @@ a {
 .navigation_list-link:hover {
     color: #fed136;
 }
+
+/* services */
+
+.services {
+    padding-bottom: 7.5rem;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    line-height: 4.6875rem;
+    color: #222222;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.3125rem;
+}
+
+/* Нижний отступ 17 */
+
+.services-description {
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #777777;
+    font-family: 'Noto Serif';
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 4.875rem;
+}
+
+/* Нижний отступ 1,5 */
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-list-item {
+    width: 18.125rem;
+}
+
+.services-list-item-title {
+    font-size: 1.125rem;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    color: #222222;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.1875rem;
+}
+
+/* Отступы 2 */
+
+.services-list-item-description {
+    font-size: 0.875rem;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    color: #777777;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Нижний отступ 1.5 */
+
+/* Доделать псевдоэлемент секция Сервисы */
