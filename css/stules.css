@@ -210,7 +210,7 @@ a {
     background-image: url(../images/laptop.png);
 }
 
-.locked::before{
+.locked::before {
     background-image: url(../images/locked.png);
 }
 
@@ -239,4 +239,105 @@ a {
 
 /* Нижний отступ 1.5 */
 
-/* Доделать псевдоэлемент секция Сервисы */
+/* Contact */
+
+.contact {
+    background-color: #222222;
+    background-image: url(../images/map.png);
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 20px;
+    padding-top: 6.625rem;
+    padding-bottom: 6.5rem;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.375rem;
+}
+
+/* Отступы 4*/
+
+.contact-description {
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #777777;
+    font-family: "Noto Serif";
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    text-align: center;
+    margin-bottom: 4.6875rem;
+}
+
+/* Отступ 1,5 */
+
+.contact-form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.contact-form-input {
+    width: 28.4375rem;
+    height: 3.125rem;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+
+
+.contact-form-input:required:focus:valid:not(:placeholder-shown),
+.contact-form-textarea:required:focus:valid:not(:placeholder-shown){
+    border-color: rgb(0,255,0);
+}
+
+.contact-form-input:required:focus:invalid:not(:placeholder-shown),
+.contact-form-textarea:required:focus:invalid:not(:placeholder-shown){
+    border-color: rgb(255,0,0);
+}
+
+.contact-form-list-input:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.contact-form-textarea {
+    width: 28.4375rem;
+    outline: none;
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 0.875rem;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    color: #bbbbbb;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 19px;
+    padding-left: 24px;
+}
+
+.contact-form-button {
+    border: none;
+    border-radius: 3px;
+    background-color: #fed136;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 1.5rem 3rem;
+    /* margin: 0 auto; */
+}
