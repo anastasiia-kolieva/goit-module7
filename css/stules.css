@@ -294,13 +294,13 @@ a {
 
 
 .contact-form-input:required:focus:valid:not(:placeholder-shown),
-.contact-form-textarea:required:focus:valid:not(:placeholder-shown){
-    border-color: rgb(0,255,0);
+.contact-form-textarea:required:focus:valid:not(:placeholder-shown) {
+    border-color: rgb(0, 255, 0);
 }
 
 .contact-form-input:required:focus:invalid:not(:placeholder-shown),
-.contact-form-textarea:required:focus:invalid:not(:placeholder-shown){
-    border-color: rgb(255,0,0);
+.contact-form-textarea:required:focus:invalid:not(:placeholder-shown) {
+    border-color: rgb(255, 0, 0);
 }
 
 .contact-form-list-input:not(:last-child) {
@@ -326,6 +326,10 @@ textarea::placeholder {
     padding-left: 24px;
 }
 
+.contact-form-button-wrapper {
+    text-align: center;
+}
+
 .contact-form-button {
     border: none;
     border-radius: 3px;
@@ -338,6 +342,5 @@ textarea::placeholder {
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-    padding: 1.5rem 3rem;
-    /* margin: 0 auto; */
+    padding: 1.5rem 2.875rem;
 }
