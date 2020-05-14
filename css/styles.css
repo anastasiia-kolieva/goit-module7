@@ -313,14 +313,19 @@ a {
     resize: none;
 }
 
-input::placeholder,
-textarea::placeholder {
+
+input,
+textarea{
     font-size: 0.875rem;
     line-height: 1.2;
     letter-spacing: 0px;
-    color: #bbbbbb;
     font-family: "Montserrat";
     font-weight: 700;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #bbbbbb;
     text-transform: uppercase;
     padding-top: 19px;
     padding-left: 24px;
